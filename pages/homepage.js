@@ -7,7 +7,7 @@ class homePage
         this.driver = driver;
     }
 
-    // Selectors
+    /////* SELECTORS */////
     async getSignInButton() 
     {
         return await this.driver.findElement(By.className("login"));
@@ -23,7 +23,7 @@ class homePage
         return await this.driver.findElement(By.xpath("//a[@title='Blouses']"));
     }
 
-    // Actions
+    /////* ACTIONS */////
     async clickSignIn() 
     {
         await (await this.getSignInButton()).click();
